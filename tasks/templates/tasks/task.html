@@ -1,0 +1,7 @@
+{% extends 'base.html' %}
+{% block title %} Lista de Tarefas {% endblock %}
+
+{% block content %}
+    <h1 class="list-title">{{task.title}}</h1>
+    <p class="list-description">{{task.description}}</p>
+{% endblock %}

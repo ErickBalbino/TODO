@@ -1,5 +1,5 @@
 .container-fluid{
-    padding: 0;
+    padding: 0px;
 }
 
 /* NAVBAR */
@@ -39,6 +39,10 @@
     padding: 5px;
     border-radius: 5px;
     transition: 0.2s ease-in;
+    text-align: center;
+}
+.add-div span{
+    color: #fff;
 }
 .add-div:hover{
     background-color: #316dce;
@@ -74,11 +78,21 @@
     height: 50px;
     list-style: none;
     margin-top: 10px;
-    border: 1px dashed #999;
+    border: 1px solid #999;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 5px;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 0.2s ease-in-out transform;
+    box-shadow: 3px 3px 8px rgba(204, 204, 204, 0.637);
+}
+.task-item:hover{
+    transform: scale(1.01);
+}
+.task-item a{
+    color: #000;
+    text-decoration: none;
 }
 .fas.fa-trash, .fas.fa-edit{
     margin: 5px;
@@ -103,4 +117,10 @@ footer p {
     text-align: center;
     top: 35%;
     position: relative;
+}
+
+
+/* PAGINA TASK */
+.list-title, .list-description{
+    padding: 0px 15px;
 }
